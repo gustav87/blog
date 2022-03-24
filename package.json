@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "start": "docker compose up",
+    "stop": "docker compose down",
+    "kill": "docker compose down --rmi all -v"
+  }
+}

@@ -1,0 +1,11 @@
+version: '2'
+services:
+  site:
+    image: jekyll/builder:4.2.0
+    init: true
+    volumes:
+      - ./docs:/srv/jekyll
+    ports:
+      - 4000:4000
+      - 35729:35729
+    command: jekyll serve --force_polling
